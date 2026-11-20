@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b18">
+<meta name="description" content="RENDEVO — Réservez vos cours et séances sportives en ligne.">
+<title>RENDEVO | Sport & Fitness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14211d;--muted:#738078;--green:#b8f36b;--paper:#f5f7f2;--line:#e3e9e1;--white:#fff}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}button,input,select{font:inherit}.wrap{max-width:1160px;margin:auto;padding:0 28px}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 22px Manrope;letter-spacing:-1px}.brand span{color:#79ad36}.nav small{color:var(--muted);font-weight:600;letter-spacing:1.5px}.hero{background:#101b18;color:white;padding:64px 0 72px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #34443b;border-radius:50%;right:-90px;top:-160px;box-shadow:0 0 0 50px #ffffff05,0 0 0 100px #ffffff04}.eyebrow{color:var(--green);font-size:11px;letter-spacing:2.4px;font-weight:700}.hero h1{font:800 clamp(38px,6vw,66px)/1.04 Manrope;letter-spacing:-3px;max-width:700px;margin:18px 0}.hero p{color:#b6c1ba;max-width:520px;line-height:1.8;font-size:15px}.hero-tag{display:inline-flex;border:1px solid #425047;border-radius:30px;padding:9px 14px;color:#d8e0da;font-size:12px;margin-top:20px}.layout{display:grid;grid-template-columns:1fr 370px;gap:28px;margin:38px auto 80px;align-items:start}.panel,.side{background:white;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 8px 30px #1c30200a}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.panel h2{font:800 22px Manrope;margin:0}.step{font-size:12px;color:var(--muted);font-weight:700}.progress{height:4px;background:#edf1eb;border-radius:9px;margin:0 0 30px;overflow:hidden}.progress i{display:block;height:100%;width:25%;background:#83bd42;transition:width .2s}.section-label{font-size:11px;letter-spacing:1.5px;color:#839087;font-weight:700;margin:0 0 12px}.field{margin-bottom:23px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:9px}.field input,.field select{width:100%;height:52px;border:1px solid #dfe6dd;border-radius:10px;background:#fff;padding:0 14px;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#82b94b;box-shadow:0 0 0 3px #82b94b20}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.actions{display:flex;justify-content:space-between;gap:12px;margin-top:28px}.btn{border:0;border-radius:10px;padding:15px 22px;font-weight:700;cursor:pointer}.primary{background:var(--green);color:#14211d}.secondary{background:#f0f3ee;color:#46534a}.btn:disabled{opacity:.45;cursor:not-allowed}.side{background:#eaf2e4;border:0;position:sticky;top:20px}.side h3{font:800 18px Manrope;margin:0 0 18px}.side-item{display:flex;gap:12px;margin:17px 0;color:#47564b;font-size:13px;line-height:1.5}.dot{width:28px;height:28px;border-radius:50%;background:#d7e8c9;display:grid;place-items:center;flex:none;color:#4b7b26;font-weight:800}.side-note{border-top:1px solid #d6e3ce;padding-top:18px;margin-top:22px;color:#63715f;font-size:12px;line-height:1.7}.hidden{display:none!important}.message{padding:14px;border-radius:10px;font-size:13px;margin-top:18px;line-height:1.6}.error{background:#fff0ed;color:#a33c2c}.success{background:#edf8e7;color:#426d27}.course-card{border:1px solid var(--line);padding:14px;border-radius:12px;margin-bottom:10px;cursor:pointer}.course-card.selected{border:2px solid #83bd42;background:#f7fbf3}.course-card strong{display:block;font-size:14px}.course-card span{font-size:12px;color:var(--muted)}.footer{padding:25px 0;border-top:1px solid var(--line);color:#89938c;font-size:12px}.footer b{color:var(--ink);font-family:Manrope}@media(max-width:800px){.layout{grid-template-columns:1fr}.side{position:static;order:2}.hero{padding:48px 0}.wrap{padding:0 18px}.panel{padding:22px}.nav{height:68px}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">RENDEVO<span>.</span></div><small>SPORT & FITNESS</small></header>
+<section class="hero"><div class="wrap"><div class="eyebrow">MOVE BETTER. LIVE STRONGER.</div><h1>Votre prochaine séance commence ici.</h1><p>Consultez les cours disponibles et réservez votre place en quelques étapes. Simple, rapide et sans appel.</p><div class="hero-tag">● INSCRIPTION EN LIGNE · CONFIRMATION PAR E-MAIL</div></div></section>
+<main class="wrap layout">
+<section class="panel">
+<div class="panel-head"><h2>Réserver une séance</h2><span class="step" id="stepLabel">ÉTAPE 1 SUR 4</span></div>
+<div class="progress"><i id="progress"></i></div>
+<div id="step1">
+<p class="section-label">01 — CHOISIR UN COURS</p><div id="courses"><p style="color:#7b887f;font-size:13px">Chargement des cours…</p></div>
+</div>
+<div id="step2" class="hidden">
+<p class="section-label">02 — DATE DE LA SÉANCE</p>
+<div class="field"><label for="date">Date souhaitée</label><input type="date" id="date"></div>
+<div id="availabilityInfo" style="font-size:13px;color:#68756c"></div>
+</div>
+<div id="step3" class="hidden">
+<p class="section-label">03 — VOS COORDONNÉES</p>
+<div class="field"><label for="name">Nom et prénom</label><input id="name" autocomplete="name" placeholder="Votre nom complet"></div>
+<div class="field"><label for="email">Adresse e-mail</label><input id="email" type="email" autocomplete="email" placeholder="nom@exemple.com"></div>
+<div class="field"><label for="phone">Téléphone</label><input id="phone" type="tel" autocomplete="tel" placeholder="0XXXXXXXXX"></div>
+</div>
+<div id="step4" class="hidden">
+<p class="section-label">04 — VÉRIFIER VOTRE DEMANDE</p><div id="review" style="font-size:14px;line-height:2"></div>
+<p style="font-size:12px;color:#78847b">En confirmant, vous demandez une place pour la séance sélectionnée. La confirmation sera envoyée par e-mail.</p>
+</div>
+<div class="actions"><button class="btn secondary" id="back" disabled>Retour</button><button class="btn primary" id="next">Continuer →</button></div>
+<div id="message" aria-live="polite"></div>
+</section>
+<aside class="side"><h3>Une réservation, en toute simplicité.</h3>
+<div class="side-item"><span class="dot">1</span><span><b>Choisissez votre activité</b><br>Consultez les cours et leurs horaires.</span></div>
+<div class="side-item"><span class="dot">2</span><span><b>Sélectionnez une date</b><br>Vérifiez les places encore disponibles.</span></div>
+<div class="side-item"><span class="dot">3</span><span><b>Confirmez vos informations</b><br>Recevez les détails de votre inscription.</span></div>
+<div class="side-note">Besoin d'aide ? Contactez directement le centre sportif. Les horaires et activités affichés sont fournis par l'établissement.</div></aside>
+</main>
+<footer class="wrap footer"><b>RENDEVO.</b> · Une expérience de réservation plus simple.<span style="float:right">© <span id="year"></span> RENDEVO</span></footer>
+<script>
+/* Add your deployed Google Apps Script /exec URL here after backend deployment. */
+const API_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_EXEC_URL_HERE";
+let courses=[],selected=null,currentStep=1,available=false;
+const $=id=>document.getElementById(id);
+$("year").textContent=new Date().getFullYear();
+const today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());$("date").min=today.toISOString().slice(0,10);
+function showMessage(text,type="error"){$("message").innerHTML=text?'<div class="message '+type+'">'+text+'</div>':""}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function renderCourses(){$("courses").innerHTML=courses.length?courses.map(c=>'<div class="course-card '+(selected&&selected.id===c.id?'selected':'')+'" data-id="'+escapeHtml(c.id)+'"><strong>'+escapeHtml(c.name)+'</strong><span>'+escapeHtml(c.category)+' · '+escapeHtml(c.startTime)+' · '+escapeHtml(c.duration)+' min · Coach : '+escapeHtml(c.coach)+'</span></div>').join(""):'<p>Aucun cours disponible pour le moment.</p>';$("courses").querySelectorAll(".course-card").forEach(el=>el.onclick=()=>{selected=courses.find(c=>c.id===el.dataset.id);renderCourses();showMessage("")})}
+async function apiGet(params){const r=await fetch(API_URL+"?"+new URLSearchParams(params));return r.json()}
+async function loadCourses(){if(API_URL.startsWith("PASTE_")){$("courses").innerHTML='<p style="color:#a33c2c;font-size:13px">Configuration requise : ajoutez l’URL /exec de votre Apps Script dans le fichier index.html.</p>';return}try{const data=await apiGet({action:"courses"});if(!data.success)throw Error(data.error||"Erreur API");courses=data.courses||[];renderCourses()}catch(e){$("courses").innerHTML='<p style="color:#a33c2c;font-size:13px">Impossible de charger les cours. Vérifiez le déploiement du service.</p>'}}
+function setStep(n){currentStep=n;[1,2,3,4].forEach(i=>$("step"+i).classList.toggle("hidden",i!==n));$("stepLabel").textContent="ÉTAPE "+n+" SUR 4";$("progress").style.width=(n*25)+"%";$("back").disabled=n===1;$("next").textContent=n===4?"Confirmer mon inscription":"Continuer →";showMessage("");if(n===4)renderReview()}
+function renderReview(){$("review").innerHTML='<b>Activité :</b> '+escapeHtml(selected.name)+'<br><b>Catégorie :</b> '+escapeHtml(selected.category)+'<br><b>Date :</b> '+escapeHtml($("date").value)+'<br><b>Horaire :</b> '+escapeHtml(selected.startTime)+'<br><b>Participant :</b> '+escapeHtml($("name").value)+'<br><b>E-mail :</b> '+escapeHtml($("email").value)+'<br><b>Téléphone :</b> '+escapeHtml($("phone").value)}
+$("back").onclick=()=>setStep(Math.max(1,currentStep-1));
+$("date").onchange=async()=>{available=false;$("availabilityInfo").textContent="Vérification des places…";try{const d=await apiGet({action:"availability",classId:selected.id,date:$("date").value});available=!!d.available;$("availabilityInfo").textContent=d.available?(d.remaining+" place(s) disponible(s) · "+d.startTime):d.message||"Aucune place disponible."}catch(e){$("availabilityInfo").textContent="Impossible de vérifier les disponibilités."}};
+$("next").onclick=async()=>{if(currentStep===1){if(!selected)return showMessage("Veuillez choisir un cours.");setStep(2);return}
+if(currentStep===2){if(!$("date").value)return showMessage("Veuillez choisir une date.");if(!available)return showMessage("Choisissez une date avec des places disponibles.");setStep(3);return}
+if(currentStep===3){if(!$("name").value.trim()||!$("email").value.trim()||!$("phone").value.trim())return showMessage("Veuillez remplir tous les champs.");if(!$("email").checkValidity())return showMessage("Veuillez saisir une adresse e-mail valide.");setStep(4);return}
+const btn=$("next");btn.disabled=true;btn.textContent="Envoi en cours…";try{const payload={action:"book",classId:selected.id,date:$("date").value,name:$("name").value.trim(),email:$("email").value.trim(),phone:$("phone").value.trim()};const response=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});const result=await response.json();if(!result.success)throw Error(result.error||"Inscription impossible.");$("step4").innerHTML='<div class="message success"><h3>Inscription confirmée</h3>Votre référence : <b>'+escapeHtml(result.reference)+'</b><br>'+escapeHtml(result.course)+' · '+escapeHtml(result.date)+' · '+escapeHtml(result.time)+'<br><br>Un e-mail de confirmation a été demandé. Conservez votre référence.</div>';$("stepLabel").textContent="INSCRIPTION TERMINÉE";$("progress").style.width="100%";$("back").classList.add("hidden");btn.classList.add("hidden");showMessage("Merci d’avoir choisi ce centre sportif.","success")}catch(e){showMessage(escapeHtml(e.message))}finally{btn.disabled=false;if(currentStep===4)btn.textContent="Confirmer mon inscription"}};
+loadCourses();
+</script>
+</body></html>
